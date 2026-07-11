@@ -1,7 +1,7 @@
 export function BookLogistics() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
-      <h1 className="text-h1 font-semibold text-ink">[PLACEHOLDER] book page heading</h1>
+      <h1 className="text-h1 font-display text-ink">[PLACEHOLDER] book page heading</h1>
       <div className="mt-8 grid gap-8 sm:grid-cols-2">
         <dl className="space-y-2 text-body text-ink">
           <div>

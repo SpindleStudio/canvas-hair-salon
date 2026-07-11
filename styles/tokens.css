@@ -2,27 +2,39 @@
   Design tokens - Spindle Studio site-template
 
   Token NAMES are locked across every client build (see CLAUDE.md Section 3).
-  Token VALUES below are placeholders only. Per-client values get dropped in
-  here on fork (CLAUDE.md Section 7, step 3). For this reference build,
-  Spindle Studio's own color values are not yet locked, so these are
-  deliberately generic and must be swapped before any client-facing review.
+  Values below are Spindle Studio's own brand values, LOCKED (confirmed in
+  Chat, July 2026) - the same system already used for Spindle's decks and
+  PDFs. Per-client values replace these on fork (CLAUDE.md Section 7, step 3).
 */
 
 :root {
-  /* Color tokens - placeholder values, not locked */
-  --color-ink: #18181b;
+  /* Color tokens - Spindle Studio, locked */
+  --color-ink: #101010;
   --color-paper: #ffffff;
-  --color-surface: #f4f4f5;
-  --color-muted: #71717a;
-  --color-accent: #3f6fb4;
+  --color-surface: #ebf0ff;
+  --color-muted: #5c5c5c;
+  --color-accent: #1354f9;
 
-  /* Type scale - placeholder sizes, not locked */
+  /* Additional non-mapped tokens from the deck system, not part of the
+     core 5-token set but carried over for parity */
+  --color-border: #e2e2de;
+  --color-muted-2: #b8b8b4;
+
+  /* Type scale - placeholder sizes, not locked (Section 3 has no confirmed values yet) */
   --font-h1: 3rem;
   --font-h2: 2.25rem;
   --font-h3: 1.5rem;
   --font-body-l: 1.125rem;
   --font-body: 1rem;
   --font-caption: 0.875rem;
+
+  /* Font families - Neue Haas Grotesk (Typekit kit mfk5izq) for headlines,
+     Archivo (next/font/google, see app/layout.tsx) for body copy.
+     Headline weight uses the Medium cut as the working substitute for
+     "Register weight" - still unverified against original source per
+     CLAUDE.md Section 3, low-stakes, easy to swap to the Bold cut. */
+  --font-family-display: "NHaasGroteskDSPro-65Md", ui-sans-serif, sans-serif;
+  --font-family-body: var(--font-archivo), ui-sans-serif, sans-serif;
 
   /* Implementation default, not a named brand token */
   --radius: 0.5rem;

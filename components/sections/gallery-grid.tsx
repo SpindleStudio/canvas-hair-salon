@@ -6,7 +6,7 @@ const galleryItems = Array.from({ length: 9 }, (_, index) => ({
 export function GalleryGrid() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
-      <h1 className="text-h1 font-semibold text-ink">[PLACEHOLDER] gallery heading</h1>
+      <h1 className="text-h1 font-display text-ink">[PLACEHOLDER] gallery heading</h1>
       <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
         {galleryItems.map((item) => (
           <figure key={item.id}>

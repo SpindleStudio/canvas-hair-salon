@@ -7,7 +7,7 @@ export function LocationCta() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-8 sm:grid-cols-2">
           <div>
-            <h2 className="text-h2 font-semibold text-ink">
+            <h2 className="text-h2 font-display text-ink">
               [PLACEHOLDER] location heading
             </h2>
             <dl className="mt-4 space-y-2 text-body text-ink">

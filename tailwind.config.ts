@@ -15,6 +15,8 @@ const config: Config = {
         surface: "var(--color-surface)",
         muted: "var(--color-muted)",
         accent: "var(--color-accent)",
+        border: "var(--color-border)",
+        "muted-2": "var(--color-muted-2)",
       },
       fontSize: {
         h1: "var(--font-h1)",
@@ -23,6 +25,10 @@ const config: Config = {
         "body-l": "var(--font-body-l)",
         body: "var(--font-body)",
         caption: "var(--font-caption)",
+      },
+      fontFamily: {
+        display: ["var(--font-family-display)"],
+        body: ["var(--font-family-body)"],
       },
       borderRadius: {
         DEFAULT: "var(--radius)",

@@ -21,7 +21,7 @@ const teamMembers = [
 export function Team() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
-      <h2 className="text-h2 font-semibold text-ink">
+      <h2 className="text-h2 font-display text-ink">
         [PLACEHOLDER] team section heading
       </h2>
       <div className="mt-8 grid gap-6 sm:grid-cols-3">
@@ -31,7 +31,7 @@ export function Team() {
               [PLACEHOLDER] photo
             </div>
             <CardContent className="pt-6">
-              <p className="text-h3 font-semibold text-ink">{member.name}</p>
+              <p className="text-h3 font-display text-ink">{member.name}</p>
               <p className="text-caption text-muted">{member.specialty}</p>
               <p className="mt-4 text-body text-ink">&ldquo;{member.testimonial}&rdquo;</p>
             </CardContent>
