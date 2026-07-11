@@ -76,23 +76,45 @@ Token file lives at `styles/tokens.css` as CSS variables, mapped into `tailwind.
 **Spacing scale:** 4px base unit, Tailwind defaults extended only if a client's grid
 genuinely requires it. Don't introduce one-off spacing values in component code.
 
-**Font delivery note:** For Spindle Studio's own brand (not client brands), Neue Haas
-Grotesk is available directly via Jami's Adobe Fonts entitlement — kit `mfk5izq`,
-embed `<link rel="stylesheet" href="https://use.typekit.net/mfk5izq.css">`. Confirmed
-available postscript names: `NHaasGroteskDSPro-65Md`, `NHaasGroteskDSPro-75Bd`,
-`NHaasGroteskTXPro-55Rg`, `NHaasGroteskTXPro-75Bd`, `NHaasGroteskTXPro-56It`,
-`NHaasGroteskDSPro-55Rg`. This replaces Inter Tight as a stand-in for anything built
-in Spindle's own environment. **This is Spindle's own brand delivery method, not
-necessarily a client's** — client font entitlements are a per-brief decision like any
-other token value.
+**Spindle Studio's own token values — LOCKED (confirmed in Chat, July 2026):**
+Spindle's own dogfood build runs the same brand system already used for Spindle's
+decks and PDFs. This is a deliberate decision, not a default: one identity across
+every Spindle touchpoint (site, decks, PDFs) rather than a separate system per format.
+The Ink/Paper/Stone/Graphite/Signal palette from the Jami Reighard *personal* portfolio
+Figma file is explicitly NOT this system — don't pull from that file for Spindle's
+own site.
 
-**Open item, unchanged:** Spindle Studio's own full token *values* (color palette beyond
-font family, for the dogfood build) aren't locked yet — the Ink/Paper/Stone/Graphite/Signal
-palette in the Jami Reighard portfolio Figma file is a personal-portfolio system, not
-confirmed as Spindle Studio's agency identity. Don't assume they're the same until
-confirmed in Chat/Projects. The exact intended weight for "headline: Register weight"
-(referenced elsewhere) also still needs confirming against original source — Display
-Medium/Bold have been used as the closest match so far, not yet verified as correct.
+```
+--color-ink:      #101010   /* near-black */
+--color-paper:    #FFFFFF   /* white */
+--color-surface:  #EBF0FF   /* light-blue highlight background */
+--color-muted:    #5C5C5C   /* mid-gray */
+--color-accent:   #1354F9   /* blue accent */
+/* additional non-mapped tokens from the deck system: */
+--color-border:   #E2E2DE   /* rule / divider */
+--color-muted-2:  #B8B8B4   /* light gray */
+```
+
+Layout language to carry into the site build: thin hairline rules, uppercase
+micro-labels with wide letter-spacing, generous whitespace, no shadows, no rounded
+corners. Editorial Swiss-modern, same as the deck system.
+
+**Font delivery — confirmed:** Neue Haas Grotesk via Jami's Adobe Fonts entitlement,
+kit `mfk5izq`, embed `<link rel="stylesheet" href="https://use.typekit.net/mfk5izq.css">`.
+Confirmed postscript names: `NHaasGroteskDSPro-65Md` (headline medium),
+`NHaasGroteskDSPro-75Bd` (headline bold), `NHaasGroteskTXPro-55Rg`,
+`NHaasGroteskTXPro-75Bd`, `NHaasGroteskTXPro-56It`, `NHaasGroteskDSPro-55Rg`.
+Body copy: Archivo (Google Fonts). This replaces Inter Tight as a stand-in for
+anything built in Spindle's own environment.
+
+**Still open:** the exact intended weight for "headline: Register weight" (referenced
+in some earlier docs) isn't a real Neue Haas Grotesk weight name — Display Medium/Bold
+are the working substitutes above, not yet verified against original source as the
+precisely intended cut. Low-stakes; revisit if it matters for a specific deliverable.
+
+**Note:** "Run the deck system for now" was the framing used to confirm this — worth
+a deliberate re-check once the real site is live and gets used for a while, rather
+than treating it as permanently closed.
 
 ## 4. Repo structure
 
