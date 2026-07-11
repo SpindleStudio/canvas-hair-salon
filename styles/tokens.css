@@ -1,0 +1,29 @@
+/*
+  Design tokens - Spindle Studio site-template
+
+  Token NAMES are locked across every client build (see CLAUDE.md Section 3).
+  Token VALUES below are placeholders only. Per-client values get dropped in
+  here on fork (CLAUDE.md Section 7, step 3). For this reference build,
+  Spindle Studio's own color values are not yet locked, so these are
+  deliberately generic and must be swapped before any client-facing review.
+*/
+
+:root {
+  /* Color tokens - placeholder values, not locked */
+  --color-ink: #18181b;
+  --color-paper: #ffffff;
+  --color-surface: #f4f4f5;
+  --color-muted: #71717a;
+  --color-accent: #3f6fb4;
+
+  /* Type scale - placeholder sizes, not locked */
+  --font-h1: 3rem;
+  --font-h2: 2.25rem;
+  --font-h3: 1.5rem;
+  --font-body-l: 1.125rem;
+  --font-body: 1rem;
+  --font-caption: 0.875rem;
+
+  /* Implementation default, not a named brand token */
+  --radius: 0.5rem;
+}
