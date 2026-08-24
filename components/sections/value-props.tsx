@@ -1,15 +1,18 @@
 const valueProps = [
   {
-    title: "[PLACEHOLDER] differentiator one",
-    description: "[PLACEHOLDER] one to two sentences on why this matters to the client's customers.",
+    number: "01",
+    title: "God-given, naturally beautiful hair",
+    description: "Lived-in, dimensional colour that grows out seamlessly, low maintenance, built to last months without looking neglected.",
   },
   {
-    title: "[PLACEHOLDER] differentiator two",
-    description: "[PLACEHOLDER] one to two sentences on why this matters to the client's customers.",
+    number: "02",
+    title: "A thoughtful intake process",
+    description: "New clients share their hair history, goals, and photos upfront, so your stylist is prepared before you ever walk in.",
   },
   {
-    title: "[PLACEHOLDER] differentiator three",
-    description: "[PLACEHOLDER] one to two sentences on why this matters to the client's customers.",
+    number: "03",
+    title: "Intentional appointments",
+    description: "No double-booking. Every slot belongs to you, including our full attention.",
   },
 ];
 
@@ -19,7 +22,8 @@ export function ValueProps() {
       <div className="grid gap-8 sm:grid-cols-3">
         {valueProps.map((prop) => (
           <div key={prop.title}>
-            <h2 className="text-h3 font-display text-ink">{prop.title}</h2>
+            <p className="text-caption font-medium uppercase tracking-widest text-muted">{prop.number}</p>
+            <h2 className="mt-2 font-display text-h3 text-ink">{prop.title}</h2>
             <p className="mt-2 text-body text-muted">{prop.description}</p>
           </div>
         ))}

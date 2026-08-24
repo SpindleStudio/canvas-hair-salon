@@ -19,15 +19,13 @@ export const ctaDefinitions: Record<CtaChannel, CtaDefinition> = {
   text: {
     channel: "text",
     label: "Text us",
-    href: "sms:[PLACEHOLDER]",
+    href: "sms:9105300036",
   },
   call: {
     channel: "call",
     label: "Call",
-    href: "tel:[PLACEHOLDER]",
+    href: "tel:9105300036",
   },
 };
 
-// [PLACEHOLDER]: which channels this client actually uses is a brief
-// decision, not made yet. All three are on here to demonstrate the pattern.
 export const activeCtaChannels: CtaChannel[] = ["bookOnline", "text", "call"];
