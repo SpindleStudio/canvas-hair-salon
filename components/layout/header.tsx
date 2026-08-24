@@ -19,7 +19,7 @@ export function Header() {
     <header className="border-b border-surface bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-h3 font-display text-ink">
-          Spindle Studio
+          Canvas
         </Link>
         <nav aria-label="Primary" className="flex items-center gap-6">
           {navItems.map((item) => (
